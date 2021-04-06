@@ -107,6 +107,8 @@ header {
 .articles {
 
     font-family: arial, sans-serif;
+    width: 90%;
+    margin: 0 auto;
 
 }
 
@@ -149,21 +151,27 @@ article div~div p {
     padding-left: 15px;
 }
 
-button {
+article div~div a {
     display: block;
     margin-left: 85%;
-    margin-right: 0;
+    margin-right: 10px;
     margin-top: 40px;
     text-align: center;
     padding: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: black solid 2px;
+    border: #0C404F solid 2px;
     border-radius: 20px;
     font-size: 2.0rem;
-    color: black;
+    color: #0C404F;
     font-family: arial, sans-serif;
     background-color: #7F9297;
+    text-decoration: none;
+}
+
+article div~div a:hover {
+    color: #FF5A3B;
+    border-color: #FF5A3B;
 }
 
 
