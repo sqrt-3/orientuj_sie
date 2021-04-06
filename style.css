@@ -167,6 +167,7 @@ article div~div a {
     font-family: arial, sans-serif;
     background-color: #7F9297;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 article div~div a:hover {
