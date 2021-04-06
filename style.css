@@ -1,0 +1,99 @@
+/* main colors: */
+/* #0C404F - dark blue (header) */
+/* #FF5A3B - red */
+/* #00DA9C - green */
+
+/* #F5F7F7 - light gray (app bgc) */
+/* #DFE3E6 - gray */
+/* #7F9297 - dark gray (body text) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #F5F7F7;
+    font-family: 'arial', sans-serif;
+    font-size: 1.6rem;
+}
+
+/* navigation */
+
+nav {
+    background-color: #0c404f;
+    font-size: 1.8rem;
+    font-family: arial, sans-serif;
+}
+
+nav .nav-main-container {
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+nav .nav-logo-wrapper {
+    padding: 15px;
+    margin-left: 30px;
+}
+
+nav .nav_logo {
+    width: 175px;
+    height: 60px;
+    background-image: url(./resources/Beznazwy-1.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+nav .nav-links-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: #00DA9C;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    font-size: 2.0rem;
+    color: #00DA9C;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+nav .nav-link:hover {
+    color: #FF5A3B;
+    border-color: #FF5A3B;
+}
+
+/* header */
+
+header {
+    height: 70vh;
+    background-color: #7F9297;
+}
+
+/* resources */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
