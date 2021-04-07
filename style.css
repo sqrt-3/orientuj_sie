@@ -39,6 +39,8 @@ nav {
 }
 
 .nav-logo-wrapper {
+    display: flex;
+    align-items: center;
     padding: 15px;
     margin-left: 30px;
 }
@@ -47,6 +49,16 @@ nav {
     width: 175px;
     height: 60px;
     background-image: url(./resources/logo.svg);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.nav-logo-aglo{
+    width: 200px;
+    height: 80px;
+    background-image: url(./resources/logo_aglo.svg);
     background-position: center top;
     background-size: contain;
     background-repeat: no-repeat;
