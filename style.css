@@ -205,8 +205,10 @@ main {
     font-size: 1.8rem;
 }
 
-.article-text.article-publish-info{
-    color:black;
+.article-text p.article-publish-details {
+    margin: 8px 0;
+    font-size: 1.2rem;
+    color: gray;
 }
 
 .article-text p {
@@ -220,7 +222,7 @@ main {
 }
 
 .article-container:hover {
-    box-shadow: 2px 2px 7px green;
+    box-shadow: 2px 2px 7px grey;
 }
 
 /* article div {
