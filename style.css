@@ -49,6 +49,7 @@ nav {
     align-items: center;
     padding: 15px;
     margin-left: 30px;
+    width: 100%;
 }
 
 .nav-logo {
@@ -395,5 +396,11 @@ footer {
 
     .header-container p {
         font-size: 2rem;
+    }
+    .nav-logo-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        margin-left: 30px;        
     }
 }
