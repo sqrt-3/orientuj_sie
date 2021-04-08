@@ -335,3 +335,26 @@ footer {
     color: #00DA9C;
     letter-spacing: 2px;
 }
+
+@media (min-width: 1024px) {
+    header {
+        background-image: url(./resources/header_img7.jpg);
+    }
+}   
+
+}
+
+@media (max-width: 1023px){
+    header {
+        background-image: url(./resources/header_img3.jpeg);
+    }
+    .nav-links-wrapper {
+        display: none;
+    }
+
+    .nav-logo-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
