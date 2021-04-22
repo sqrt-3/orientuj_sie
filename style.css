@@ -196,6 +196,8 @@ main {
 
 .articles-main-container {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     /* position: absolute; */
     width: 90%;
     margin: 0 auto;
@@ -208,7 +210,7 @@ main {
 .article-container {
     /* display: block; */
     display: flex;
-    flex-wrap: nowrap;
+    flex-basis: 100%;
     /* flex-direction: column; */
     /* flex-direction: row; */
     width: 90%;
@@ -394,12 +396,13 @@ footer {
 
 
 } */
-@media (min-width: 481px) and (orientation:portrait){
-    .article-container{
+@media (min-width: 481px) and (orientation:portrait) {
+    .article-container {
         flex-wrap: wrap;
         flex-direction: row;
 
     }
+
     .article-link {
         flex-basis: 45%;
     }
