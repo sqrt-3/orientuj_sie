@@ -195,6 +195,7 @@ main {
 /* main section - articles */
 
 .articles-main-container {
+    display: flex;
     /* position: absolute; */
     width: 90%;
     margin: 0 auto;
@@ -207,7 +208,7 @@ main {
 .article-container {
     /* display: block; */
     display: flex;
-
+    flex-wrap: nowrap;
     /* flex-direction: column; */
     /* flex-direction: row; */
     width: 90%;
@@ -218,8 +219,8 @@ main {
 }
 
 .article-link {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     display: block;
     position: relative;
     flex-basis: 100%;
@@ -393,6 +394,17 @@ footer {
 
 
 } */
+@media (min-width: 481px) and (orientation:portrait){
+    .article-container{
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+    .article-link {
+        flex-basis: 45%;
+    }
+}
+
 
 @media (min-width: 768px) {
     .header-container h1 {
