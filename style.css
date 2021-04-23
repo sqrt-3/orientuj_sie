@@ -397,15 +397,19 @@ footer {
 
 } */
 @media (min-width: 481px) and (orientation:portrait) {
-    .article-container {
+    .articles-main-container {
         flex-wrap: wrap;
         flex-direction: row;
-
+        /* justify-content:; */
+        /* align-content: space-around; */
     }
 
-    .article-link {
+    .article-container {
+
         flex-basis: 45%;
     }
+
+
 }
 
 
