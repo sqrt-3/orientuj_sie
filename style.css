@@ -412,6 +412,20 @@ footer {
 
 }
 
+@media (min-width: 1024px) and (orientation:portrait) {
+    .articles-main-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* justify-content:; */
+        /* align-content: space-around; */
+    }
+
+    .article-container {
+        flex-basis: 48%;
+    }
+
+
+}
 
 @media (min-width: 768px) {
     .header-container h1 {
@@ -428,6 +442,51 @@ footer {
         padding: 15px;
         margin-left: 30px;
     }
+}
+
+@media (min-width: 481px) and (orientation:landscape) {
+    .articles-main-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+        
+        
+    }
+
+    .article-container {
+
+        flex-basis: 50%;
+        align-self: center;
+    }
+    .article-link {
+        height: 50vh;
+    }
+
+}
+
+@media (min-width: 481px) and (orientation:landscape) {    
+    .article-link {
+        height: 40vh;
+    }
+
+}
+
+@media (min-width: 1201px) and (orientation:landscape) {
+    .articles-main-container {
+        flex-wrap: wrap;
+        flex-direction: row;            
+        
+    }
+
+    .article-container {
+
+        flex-basis: 33%;
+        align-self: center;
+    }
+    .article-link {
+        height: 30vh;
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -449,16 +508,6 @@ footer {
     .header-container p {
         font-size: 1.6rem;
     }
-
-    /* .article-container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .article-link {
-        display: block;
-        font-size: 1rem;
-    } */
 }
 
 @media (min-width: 1201px) {
@@ -490,7 +539,5 @@ footer {
         text-transform: lowercase;
     }
 
-    /* .article-link {
-        font-size: 1.6rem;
-    } */
+
 }
