@@ -258,6 +258,7 @@ main {
     margin: 0 10px;
     color: #fff;
     padding-left: 10px;
+    overflow: hidden;
 }
 
 .article-text h2 {
@@ -275,14 +276,23 @@ main {
     margin-top: 20px;
     font-size: 1.2rem;
     line-height: 1.5;
+
 }
 
 .article-text p.article-description {
-    display: none;
+    position: absolute;
+    bottom: - 40%;
+    left: 0;
 }
 
 
-
+.article-img:hover .article-text,
+.artcile-text p.article-description {
+    overflow: visible;
+    bottom: 40%;
+    left: 0;
+    
+}
 
 
 
