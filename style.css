@@ -262,18 +262,18 @@ main {
 
 .article-text h2 {
     margin-top: 10px;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .article-text p.article-publish-details {
     margin: 8px 0;
-    font-size: .8rem;
+    font-size: 1.2rem;
     color: #fff;
 }
 
 .article-text p {
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 
@@ -409,7 +409,13 @@ footer {
         flex-basis: 45%;
     }
 
+    .article-text h2 {
+        font-size: 1.8rem;
+    }
 
+    .article-text p.article-publish-details {
+        font-size: 1.2rem;
+    }
 }
 
 @media (min-width: 1024px) and (orientation:portrait) {
@@ -448,9 +454,9 @@ footer {
     .articles-main-container {
         flex-wrap: wrap;
         flex-direction: row;
-        
-        
-        
+
+
+
     }
 
     .article-container {
@@ -458,13 +464,14 @@ footer {
         flex-basis: 50%;
         align-self: center;
     }
+
     .article-link {
         height: 50vh;
     }
 
 }
 
-@media (min-width: 481px) and (orientation:landscape) {    
+@media (min-width: 481px) and (orientation:landscape) {
     .article-link {
         height: 40vh;
     }
@@ -474,8 +481,8 @@ footer {
 @media (min-width: 1201px) and (orientation:landscape) {
     .articles-main-container {
         flex-wrap: wrap;
-        flex-direction: row;            
-        
+        flex-direction: row;
+
     }
 
     .article-container {
@@ -483,8 +490,17 @@ footer {
         flex-basis: 33%;
         align-self: center;
     }
+
     .article-link {
         height: 30vh;
+    }
+
+    .article-text h2 {
+        font-size: 2.6rem;
+    }
+
+    .article-text p.article-publish-details {
+        font-size: 1.2rem;
     }
 
 }
