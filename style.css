@@ -280,6 +280,7 @@ main {
 }
 
 .article-text p.article-description {
+    font-size: 1rem;
     position: absolute;
     bottom: - 40%;
     left: 0;
@@ -289,9 +290,14 @@ main {
 .article-img:hover .article-text,
 .artcile-text p.article-description {
     overflow: visible;
-    bottom: 40%;
+    bottom: 30%;
     left: 0;
-    
+
+}
+
+.article-img:hover {
+    background-position: center;
+    background-size: 125%;
 }
 
 
@@ -426,6 +432,10 @@ footer {
     .article-text p.article-publish-details {
         font-size: 1.2rem;
     }
+
+    .article-text p.article-description {
+        font-size: 1.4rem;
+    }
 }
 
 @media (min-width: 1024px) and (orientation:portrait) {
@@ -476,17 +486,18 @@ footer {
     }
 
     .article-link {
-        height: 50vh;
-    }
-
-}
-
-@media (min-width: 481px) and (orientation:landscape) {
-    .article-link {
         height: 40vh;
     }
 
 }
+
+@media (min-width: 1024px) and (orientation:landscape) {
+    .article-text p.article-description {
+        font-size: 1.4rem;
+    }
+}
+
+
 
 @media (min-width: 1201px) and (orientation:landscape) {
     .articles-main-container {
@@ -511,6 +522,10 @@ footer {
 
     .article-text p.article-publish-details {
         font-size: 1.2rem;
+    }
+
+    .article-text p.article-description {
+        font-size: 1.4rem;
     }
 
 }
