@@ -380,16 +380,17 @@ footer {
     letter-spacing: 2px;
 }
 footer p {
-    flex-basis: 50%;
+    flex-basis: 80%;
 }
 .social-wraper {
-    flex-basis: 50%;
+    flex-basis: 20%;
     display: flex;
 }
 .social-link {
     flex-basis: 33%;
     font-size: 2.4rem;
     color: #00DA9C;
+    padding-left: 10px;
     
 }
  
