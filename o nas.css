@@ -36,6 +36,7 @@ nav {
 
 .nav-logo-wrapper {
     display: flex;
+    flex-direction: column;
     /* flex-basis: 100%; */
     justify-content: center;
     align-items: center;
@@ -56,21 +57,21 @@ nav {
 
 .nav-links-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
     justify-content: space-around;
     align-items: center;
     /* margin-left: auto; */
     /* margin-right: 20px; */
 }
 
-.nav-links-wrapper{
+.nav-links-wrapper {
     display: none;
 }
 
 
 
-.nav-link,
-.hamburgerIcon {
+.nav-link {
     /* flex-basis: 15%; */
     margin-left: 7px;
     margin-right: 7px;
@@ -90,12 +91,16 @@ nav {
 }
 
 .hamburgerIcon {
-    position: fixed;
-    top: 5%;
-    right:-10%;
-    font-size: 2rem;
-    border: none;   
-    
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    text-align: center;
+    color: #00DA9C;
+    font-size: 2.6rem;
+    padding: 30px 20px;
+
+
 }
 
 .nav-link:first-child {
@@ -113,10 +118,6 @@ nav {
     border-color: #FF5A3B;
 }
 
-/* .active {
-    background-color: #04AA6D;
-    color: white;
-  } */
 /* sekcja */
 
 section {
@@ -155,7 +156,15 @@ footer p {
 }
 
 @media(min-width: 1024px) {
+    .nav-main-container {
+        flex-direction: row;
+    }
+
+    .nav-logo-wrapper {
+        flex-basis: 40%;
+    }
     .nav-logo {
+        align-self: flex-start;        
         width: 150px;
         height: 60px;
     }
