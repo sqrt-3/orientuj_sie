@@ -35,7 +35,7 @@ nav {
 }
 
 .nav-logo-wrapper {
-    display: flex;    
+    display: flex;
     /* flex-basis: 100%; */
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@ nav {
     width: 100%;
 }
 
-.nav-logo {    
+.nav-logo {
     width: 150px;
     height: 60px;
     background-image: url(./resources/logo.svg);
@@ -56,14 +56,21 @@ nav {
 
 .nav-links-wrapper {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     /* margin-left: auto; */
     /* margin-right: 20px; */
 }
 
-.nav-link {    
+.nav-links-wrapper{
+    display: none;
+}
+
+
+
+.nav-link,
+.hamburgerIcon {
     /* flex-basis: 15%; */
     margin-left: 7px;
     margin-right: 7px;
@@ -76,11 +83,19 @@ nav {
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
-    /* font-size: 1rem; */
     color: #00DA9C;
     text-decoration: none;
     text-transform: capitalize;
     letter-spacing: 2px;
+}
+
+.hamburgerIcon {
+    position: fixed;
+    top: 5%;
+    right:-10%;
+    font-size: 2rem;
+    border: none;   
+    
 }
 
 .nav-link:first-child {
@@ -92,11 +107,17 @@ nav {
     /* text-align: right; */
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.hamburgerIcon:hover {
     color: #FF5A3B;
     border-color: #FF5A3B;
 }
- /* sekcja */
+
+/* .active {
+    background-color: #04AA6D;
+    color: white;
+  } */
+/* sekcja */
 
 section {
     height: 100vh;
@@ -115,31 +136,40 @@ footer {
     color: #00DA9C;
     letter-spacing: 2px;
 }
+
 footer p {
     flex-basis: 80%;
 }
+
 .social-wraper {
     flex-basis: 20%;
     display: flex;
 }
+
 .social-link {
     flex-basis: 33%;
     font-size: 2.4rem;
     color: #00DA9C;
     padding-left: 10px;
-    
+
 }
+
 @media(min-width: 1024px) {
-    .nav-logo {    
+    .nav-logo {
         width: 150px;
-        height: 60px;        
+        height: 60px;
     }
-    
-    .nav-links-wrapper {        
-        flex-wrap: nowrap;                   
+
+    .nav-links-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
     }
-    
-    .nav-link { 
+
+    .nav-link {
         font-size: 2rem;
-      }
+    }
+
+    .hamburgerIcon {
+        display: none;
+    }
 }
