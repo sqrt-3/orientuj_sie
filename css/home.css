@@ -23,7 +23,6 @@ body {
     position: relative;
     background-color: #f5f7f7;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
 }
 
 /* navigation */
@@ -277,7 +276,7 @@ main {
 
 .article-text p.article-description {
     font-size: 1rem;
-    position: absolute;    
+    position: absolute;
     bottom: - 40%;
     left: 10px;
     transition: .3s linear;
@@ -333,6 +332,57 @@ footer p {
     padding-left: 10px;
 
 }
+
+/* temporary */
+
+.under-construction {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 60vh;
+    width: 100vw;
+    margin-top: 25vh;
+    background-color: #0C404F;
+}
+
+.under-construction .under-construction-description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    color: #00DA9C;
+    letter-spacing: 2px;
+}
+
+.under-construction .under-construction-description .construction-main-info,
+.under-construction .under-construction-description .construction-additional-info,
+.under-construction .dots {
+    flex-basis: 100%;
+}
+
+.under-construction .under-construction-description .construction-additional-info {
+    font-size: 2rem;
+}
+
+.dots span {
+    display: inline-block;
+    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: .5;
+}
+
+span.active {
+    background-color: #7F9297;
+}
+
+
+/* MQ */
+
 
 @media (min-width: 481px) and (orientation:portrait) {
     .articles-main-container {
