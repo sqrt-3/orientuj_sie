@@ -34,14 +34,12 @@ nav {
     background-color: #0c404f;
     font-family: arial, sans-serif;
     z-index: 1;
-
 }
 
 .nav-main-container {
     display: flex;
     max-width: 1920px;
     margin: 0 auto;
-
 }
 
 .nav-logo-wrapper {
@@ -124,7 +122,6 @@ header {
     background-size: cover;
     z-index: 0;
     margin-bottom: 80px;
-
 }
 
 .hero-shadow {
