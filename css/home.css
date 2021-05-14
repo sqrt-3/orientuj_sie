@@ -53,7 +53,7 @@ nav {
 .nav-logo {
     width: 175px;
     height: 60px;
-    background-image: url(./resources/logo.svg);
+    background-image: url(/orientuj_sie/img/logo/logo_orientuj_sie.svg);
     background-position: center top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@ header {
     top: 80px;
     left: 0;
     height: 70vh;
-    background-image: url(./resources/header_img3.jpeg);
+    background-image: url(/orientuj_sie/img/header_img3.jpeg);
     background-position: center 25%;
     background-size: cover;
     z-index: 0;
@@ -233,15 +233,15 @@ main {
 }
 
 .img-url-1 {
-    background-image: url(./resources/article_img_1.jpg);
+    background-image: url(/orientuj_sie/img/article_img_1.jpg);
 }
 
 .img-url-2 {
-    background-image: url(./resources/article_img_2.jpg);
+    background-image: url(/orientuj_sie/img/article_img_2.jpg);
 }
 
 .img-url-3 {
-    background-image: url(./resources/article_img_3.jpg);
+    background-image: url(/orientuj_sie/img/article_img_3.jpg);
 }
 
 .article-text {
@@ -412,7 +412,7 @@ footer p {
 
 @media (min-width: 1024px) {
     header {
-        background-image: url(./resources/header_img7.jpg);
+        background-image: url(/orientuj_sie/img/header_img7.jpg);
     }
 
     .header-container h1,
