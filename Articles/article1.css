@@ -257,12 +257,16 @@ footer p {
         display: none;
     }
 
+    h1 {
+        font-size: 4.2rem;
+    }
+
     img {
         float: right;
     }
 
 .article-img img{
-    height: 60%;
+    height: 40vh;
 }    
     .text {
         float: right;
@@ -279,5 +283,17 @@ footer p {
         font-size: 2.8rem;
     }
 
+    .article-img img{
+        height: 30vh;
+        width: 60%;
+    }  
 
+
+}
+
+@media(min-width: 1200px){
+    .article-img img{
+        height: 30vh;
+        width: 30%;
+    } 
 }
