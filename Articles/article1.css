@@ -12,7 +12,8 @@ body {
     position: relative;
     background-color: #f5f7f7;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
+
+
 }
 
 .clearfix::after {
@@ -52,7 +53,7 @@ nav {
 .nav-logo {
     width: 150px;
     height: 60px;
-    background-image: url(/orientuj_sie/resources/logo.svg);
+    background-image: url(/orientuj_sie/img/logo/logo_orientuj_sie.svg);
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -67,6 +68,7 @@ nav {
     flex-basis: 100%;
     justify-content: space-around;
     align-items: center;
+    font-size: 1.6rem;
 }
 
 .nav-links-wrapper:last-child {
@@ -140,12 +142,13 @@ h1 {
     margin-bottom: 20px;
 }
 
-p {
+.article-content {
     text-indent: 15px;
     word-wrap: break-word;
     text-align: justify;
     padding: 0 10px;
     margin-bottom: 20px;
+    font-size: 1.6rem;
 }
 
 
@@ -188,31 +191,45 @@ footer p {
         flex-direction: row;
     }
 
+    h1 {
+        font-size: 3rem;
+    }
+
+
 }
 
 @media (min-width:768px) {
-
+    h1 {
+        font-size: 3.6rem;
+    }
 
     img {
-        float: left;        
-        margin:0 5px;
+        float: left;
+        margin: 0 10px;
         width: 50%;
     }
 
     .article-img img {
         width: 50%;
+        margin-bottom: 0;
     }
-    
+
 
     .text {
         float: left;
         margin-left: 5px;
-        
-        
+    }
+
+    .article-content {
+        font-size: 1.8rem;
     }
 }
 
 @media(min-width: 1024px) {
+    section {
+        min-height: 100vh;
+    }
+
     .nav-main-container {
         flex-direction: row;
     }
@@ -239,4 +256,28 @@ footer p {
     .hamburgerIcon {
         display: none;
     }
+
+    img {
+        float: right;
+    }
+
+.article-img img{
+    height: 60%;
+}    
+    .text {
+        float: right;
+    }
+
+    footer p {
+        font-size: 2.4rem;
+    }
+
+}
+
+@media(min-width: 1024px) and (orientation: portrait) {
+    .article-content {
+        font-size: 2.8rem;
+    }
+
+
 }
