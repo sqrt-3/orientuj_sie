@@ -12,8 +12,6 @@ body {
     position: relative;
     background-color: #f5f7f7;
     font-family: 'Roboto', sans-serif;
-
-
 }
 
 .clearfix::after {
@@ -30,7 +28,6 @@ nav {
     background-color: #0c404f;
     font-family: arial, sans-serif;
     z-index: 1;
-
 }
 
 .nav-main-container {
@@ -38,7 +35,6 @@ nav {
     flex-direction: column;
     max-width: 1920px;
     margin: 0 auto;
-
 }
 
 .nav-logo-wrapper {
@@ -57,7 +53,6 @@ nav {
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-    /* z-index: 0; */
 }
 
 .nav-links-wrapper {
@@ -93,7 +88,7 @@ nav {
     letter-spacing: 2px;
 }
 
-.hamburgerIcon {
+.hamburger-icon {
     position: absolute;
     top: 0;
     right: 0;
@@ -102,8 +97,6 @@ nav {
     color: #00DA9C;
     font-size: 2.6rem;
     padding: 30px 20px;
-
-
 }
 
 .nav-link:first-child {
@@ -115,7 +108,7 @@ nav {
 }
 
 .nav-link:hover,
-.hamburgerIcon:hover {
+.hamburger-icon:hover {
     color: #FF5A3B;
     border-color: #FF5A3B;
 }
@@ -126,7 +119,11 @@ section {
     position: relative;
     top: 0;
     left: 0;
-    /* min-height: 100vh; */
+}
+
+article {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -154,35 +151,36 @@ h1 {
 
 /* footer  */
 footer {
-    /* position: relative;
+    position: relative;
     bottom: 0;
     left: 0;
-    right: 0; */
-    display: flex;
+    right: 0;    
     width: 100%;
     height: 50px;
     background-color: #0c404f;
-    text-align: center;
+    text-align: left;
     line-height: 50px;
     font-size: 1.6rem;
     color: #00DA9C;
     letter-spacing: 2px;
 }
 
-footer p {
-    flex-basis: 80%;
-}
-
-.social-wraper {
-    flex-basis: 20%;
-    display: flex;
-}
-
 .social-link {
-    flex-basis: 33%;
     font-size: 2.4rem;
     color: #00DA9C;
     padding-left: 10px;
+}
+
+.facebook {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.instagram {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
 
 }
 
@@ -195,6 +193,9 @@ footer p {
         font-size: 3rem;
     }
 
+    footer {
+        text-align: center;
+    }
 
 }
 
@@ -223,6 +224,19 @@ footer p {
     .article-content {
         font-size: 1.8rem;
     }
+
+    footer {
+        font-size: 2.4rem;
+    }
+
+    .social-link {
+        font-size: 3rem;
+    }
+
+    .facebook {
+        bottom: 0;
+        right: 70px;
+    }
 }
 
 @media(min-width: 1024px) {
@@ -250,10 +264,10 @@ footer p {
     }
 
     .nav-link {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
-    .hamburgerIcon {
+    .hamburger-icon {
         display: none;
     }
 
@@ -265,15 +279,12 @@ footer p {
         float: right;
     }
 
-.article-img img{
-    height: 40vh;
-}    
-    .text {
-        float: right;
+    .article-img img {
+        height: 40vh;
     }
 
-    footer p {
-        font-size: 2.4rem;
+    .text {
+        float: right;
     }
 
 }
@@ -283,17 +294,29 @@ footer p {
         font-size: 2.8rem;
     }
 
-    .article-img img{
+    .article-img img {
         height: 30vh;
         width: 60%;
-    }  
+    }
 
+    footer {
+        font-size: 2.4rem;
+    }
+
+    .social-link {
+        font-size: 3rem;
+    }
+
+    .facebook {
+        bottom: 0;
+        right: 70px;
+    }
 
 }
 
-@media(min-width: 1200px){
-    .article-img img{
+@media(min-width: 1200px) {
+    .article-img img {
         height: 30vh;
-        width: 30%;
-    } 
+        width: 40%;
+    }
 }
