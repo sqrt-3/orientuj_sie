@@ -313,7 +313,7 @@ footer {
     width: 100%;
     height: 50px;
     background-color: #0c404f;
-    text-align: center;
+    text-align: left;
     line-height: 50px;
     font-size: 1.6rem;
     color: #00DA9C;
@@ -410,6 +410,12 @@ span.active {
 
     .article-text p.article-description {
         font-size: 1.4rem;
+    }
+}
+
+@media(min-width: 481px) {
+    footer {
+        text-align: center;
     }
 }
 
