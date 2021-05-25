@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    background-color: #f5f7f7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* navigation */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #0c404f;
+    font-family: arial, sans-serif;
+    z-index: 1;
+}
+
+.nav-main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.nav-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.nav-logo {
+    width: 150px;
+    height: 60px;
+    background-image: url(/orientuj_sie/img/logo/logo_orientuj_sie.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-links-wrapper {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.nav-links-wrapper:last-child {
+    margin-bottom: 50px;
+}
+
+.nav-link {
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 33%;
+    text-align: center;
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: #00DA9C;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    color: #00DA9C;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.hamburger-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    text-align: center;
+    color: #00DA9C;
+    font-size: 2.6rem;
+    padding: 30px 20px;
+}
+
+.nav-link:first-child {
+    text-align: center;
+    font-size: 26px;
+    border: transparent;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.nav-link:hover,
+.hamburger-icon:hover {
+    color: #FF5A3B;
+    border-color: #FF5A3B;
+}
+
+/* sekcja */
+
+section {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+article {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 110px 15px 20px;
+}
+
+.article-img img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.article-content {
+    text-indent: 15px;
+    word-wrap: break-word;
+    text-align: justify;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+
+/* footer  */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    width: 100%;
+    height: 50px;
+    background-color: #0c404f;
+    text-align: left;
+    line-height: 50px;
+    font-size: 1.6rem;
+    color: #00DA9C;
+    letter-spacing: 2px;
+}
+
+.social-link {
+    font-size: 2.4rem;
+    color: #00DA9C;
+    padding-left: 10px;
+}
+
+.facebook {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.instagram {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+
+}
+
+@media(min-width: 541px) {
+    .nav-links-wrapper {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
+
+@media (min-width:768px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    img {
+        float: left;
+        margin: 0 10px;
+        width: 50%;
+    }
+
+    .article-img img {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+
+    .text {
+        float: left;
+        margin-left: 5px;
+    }
+
+    .article-content {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        font-size: 2.4rem;
+    }
+
+    .social-link {
+        font-size: 3rem;
+    }
+
+    .facebook {
+        bottom: 0;
+        right: 70px;
+    }
+}
+
+@media(min-width: 1024px) {
+    section {
+        min-height: 100vh;
+    }
+
+    .nav-main-container {
+        flex-direction: row;
+    }
+
+    .nav-logo-wrapper {
+        flex-basis: 40%;
+    }
+
+    .nav-logo {
+        align-self: flex-start;
+        width: 150px;
+        height: 60px;
+    }
+
+    .nav-links-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .nav-link {
+        font-size: 1.6rem;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    img {
+        float: right;
+    }
+
+    .article-img img {
+        height: 40vh;
+    }
+
+    .text {
+        float: right;
+    }
+
+}
+
+@media(min-width: 1024px) and (orientation: portrait) {
+    .article-content {
+        font-size: 2.8rem;
+    }
+
+    .article-img img {
+        height: 30vh;
+        width: 60%;
+    }
+
+    footer {
+        font-size: 2.4rem;
+    }
+
+    .social-link {
+        font-size: 3rem;
+    }
+
+    .facebook {
+        bottom: 0;
+        right: 70px;
+    }
+
+}
+
+@media(min-width: 1200px) {
+    .article-img img {
+        height: 30vh;
+        width: 40%;
+    }
+}
